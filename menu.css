@@ -1,0 +1,81 @@
+﻿body {
+    margin: 0;
+    padding: 0 0 0 0;
+}
+#menu-container{
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	width: 0px;
+	height: 100%;
+	padding: 10px 10px 10px 10px;
+}
+#menuBtn{
+	position: absolute;
+    top: 5px;
+    right: 5px;
+	width: 70px;
+	height: 70px;
+	background: linear-gradient(0deg, #90c8ec, #69ffe0);
+	border-radius: 20%;
+	text-align: center;
+	box-shadow:0 0 0 2px #F0FDFD inset;
+}
+#menuBtn:hover{
+	box-shadow:0 0 0 2px #92DDFD inset;
+}
+#menuBtn div{
+	position: relative;
+	width: 55px;
+	height: 12px;
+	background: #F0FDFD;
+	border-radius: 6px;
+	margin: 8px auto 0 auto;
+}
+#menu{
+	display:none;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	position: absolute;
+	background-color: #333333;
+	padding: 1em;
+	border-color: rgba(255, 255, 255, 0.3);
+	border-width: 3px;
+	border-style: solid;
+	border-radius: 25px 5px 5px 25px;
+	max-height: 80%;
+	right: 5px;
+    top: 0px;
+	margin: 80px 0 0 5px;
+}
+#menu::-webkit-scrollbar-track{
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+#menu::-webkit-scrollbar{
+	width: 12px;
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+#menu::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+.menu-items{
+	white-space: nowrap;
+	font-size: 2.5em;
+	color: white;
+	text-shadow: 1px 1px 0 black;
+	cursor: default;
+	user-select: none;
+}
+.menu-items:hover{
+	box-shadow:0 0 0 2px #92DDFD inset;
+	background-color: #BBB;
+}
+.menu-items:active{
+	box-shadow:0 0 0 2px #579 inset;
+	background-color: #999;
+}
